@@ -72,7 +72,7 @@ const showTotalPoint = () => {
 const callback = () => {
   columns().forEach(column => {
     const links = column.querySelectorAll(
-      '.js-project-column-card:not(.d-none) .js-project-card-issue-link',
+      '.js-project-column-card:not(.d-none) div:not(.js-issue-note-reference) > .js-project-card-issue-link',
     );
 
     const point = getPoint(links);
